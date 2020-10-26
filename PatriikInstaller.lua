@@ -9,7 +9,7 @@ print('---------------------------\nPatriikInstaller '..version..'\n------------
 os.sleep(3)
 while true do
     local file = io.read()
-    local wgetItem = 'wget "https://raw.githubusercontent.com/PatriikPlays/PatriikInstaller/main/downloads/"..file..".lua" /home/'..file..'.lua -f'
+    local wgetItem = tostring('wget "https://raw.githubusercontent.com/PatriikPlays/PatriikInstaller/main/downloads/"..file..".lua" /home/'..file..'.lua -f')
     local success,err = pcall(function()
         os.execute(wgetItem)
     end)
