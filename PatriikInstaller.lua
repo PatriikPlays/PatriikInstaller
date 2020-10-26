@@ -1,6 +1,6 @@
-local version = 1.0
-local term = require('term')
-term.clear()
+local version = '1.0'
+local tty = require('tty')
+tty.clear()
 
 print('---------------------------\nPatriikInstaller '..version..'\n---------------------------\n ')
 os.sleep(3)
