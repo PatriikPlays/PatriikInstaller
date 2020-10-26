@@ -11,5 +11,5 @@ while true do
     local file = io.read()
     local success,err = pcall(function()
         os.execute('wget "https://raw.githubusercontent.com/PatriikPlays/PatriikInstaller/main/downloads/"..file..".lua" /home/'..file..'.lua -f')
-    end
+    end)
 end
