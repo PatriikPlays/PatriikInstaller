@@ -1,1 +1,1 @@
-os.execute('wget "https://github.com/PatriikPlays/PatriikInstaller/blob/main/downloads/test.lua" test.lua -f')
+os.execute('wget "https://raw.githubusercontent.com/PatriikPlays/PatriikInstaller/main/downloads/test.lua" test.lua -f')
