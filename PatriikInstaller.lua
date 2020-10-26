@@ -7,4 +7,9 @@ term.setCursor(1,1)
 
 print('---------------------------\nPatriikInstaller '..version..'\n---------------------------\n ')
 os.sleep(3)
-os.execute('wget "https://raw.githubusercontent.com/PatriikPlays/PatriikInstaller/main/downloads/test.lua" /home/test.lua -f')
+while true do
+    local file = io.read()
+    local success,err = pcall(function()
+        os.execute('wget "https://raw.githubusercontent.com/PatriikPlays/PatriikInstaller/main/downloads/"..file..".lua" /home/'..file..'.lua -f')
+    end
+end
