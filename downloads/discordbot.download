@@ -1,3 +1,3 @@
-%FILESTART% test.txt
+%CSTLINE% %FILESTART% test.txt
 yes
-%FILEEND%
+%CSTLINE% %FILEEND% 
